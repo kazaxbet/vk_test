@@ -35,10 +35,9 @@ project/
    git clone https://github.com/your_username/your_repository.git
    cd your_repository
 Установите зависимости:
-
-bash
 npm install
 Создайте файл .env в корне проекта и добавьте ваш GitHub токен:
-
+## Далее нужно настроить env и логин через токен, что у меня и не получилось.
 env
 GITHUB_TOKEN=your_github_token_here
+## Далее следовало только скачать приложенные файлы с кодом расположить их правильно в проекте и запустить "npm run test"
