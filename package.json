@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "test": "npx playwright test",
+        "allure:generate": "npx allure generate ./allure-results --clean",
+        "allure:open": "npx allure open"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.5"
+    }
+}
