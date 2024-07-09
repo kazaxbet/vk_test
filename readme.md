@@ -1,8 +1,44 @@
-# Playwright GitHub Issue Tests
+
+# Playwright Project
+
+Этот проект использует [Playwright](https://playwright.dev/) для автоматизации тестирования веб-приложений. В проекте реализованы тесты для создания, редактирования и закрытия задач на GitHub.
+
+## Структура проекта
+
+project/
+├── node_modules/
+├── src/
+│ ├── pages/
+│ │ └── issue.page.ts
+│ └── tests/
+│ ├── create-issue.spec.ts
+│ ├── edit-issue.spec.ts
+│ └── close-issue.spec.ts
+├── playwright.config.ts
+├── package.json
+└── tsconfig.json
+
+
+
+## Предварительные требования
+
+Убедитесь, что на вашем компьютере установлены следующие программы:
+
+- [Node.js](https://nodejs.org/en/download/) (рекомендуется версия LTS)
+- [npm](https://www.npmjs.com/get-npm) (должен быть установлен вместе с Node.js)
 
 ## Установка
 
-Убедитесь, что у вас установлен Node.js. Затем установите зависимости:
+1. Склонируйте репозиторий:
 
-```sh
+   ```bash
+   git clone https://github.com/your_username/your_repository.git
+   cd your_repository
+Установите зависимости:
+
+bash
 npm install
+Создайте файл .env в корне проекта и добавьте ваш GitHub токен:
+
+env
+GITHUB_TOKEN=your_github_token_here
